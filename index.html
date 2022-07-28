@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/script.js" defer></script>
+    <title>Students Score</title>
+  </head>
+  <body>
+    <header>
+      <h1>Type the score of your students</h1>
+    </header>
+    <main>
+      <form>
+        <input type="text" id="studentName" placeholder="Student name" />
+        <input type="number" min="0" max="100" id="score1" placeholder="Score 1" />
+        <input type="number" min="0" max="100" id="score2" placeholder="Score 2" />
+        <input type="button" id="btn" value="Add" />
+      </form>
+      <div class="notification"></div>
+      <div class="table"></div>
+    </main>
+  </body>
+</html>
