@@ -1,0 +1,108 @@
+:root {
+  --light-bkg: #c2c2c7;
+  --btn-bkg: #44475a;
+  --btn-bkg-hover: #6c6e80;
+  --light: #ffffff;
+  --green: #008e24;
+  --red: #ff5555;
+
+  --poppins: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--poppins);
+}
+
+header h1 {
+  font-weight: 400;
+  padding: 4rem 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  width: 20rem;
+  background-color: var(--light-bkg);
+  margin-bottom: 2rem;
+}
+
+form input {
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  margin: 0.2rem 0;
+  border: none;
+}
+
+#btn {
+  background-color: var(--btn-bkg);
+  border: none;
+  padding: 0.5rem 0;
+  color: var(--light);
+}
+
+#btn:hover {
+  cursor: pointer;
+  background-color: var(--btn-bkg-hover);
+}
+
+.error {
+  background-color: var(--red);
+  color: var(--light);
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 90%;
+}
+
+.student {
+  width: 98%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.1rem 0.1rem;
+}
+
+.student span {
+  font-size: 1rem;
+  font-size: 1.1rem;
+
+  border: 0.1rem solid var(--light);
+  text-align: center;
+  background-color: var(--light-bkg);
+}
+
+.pass {
+  background-color: var(--green) !important;
+  color: var(--light);
+}
+
+.notpass {
+  background-color: var(--red) !important;
+  color: var(--light);
+}
+
+@media (min-width: 1024px) {
+  .student {
+    width: 40%;
+  }
+}
